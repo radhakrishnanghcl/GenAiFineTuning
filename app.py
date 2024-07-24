@@ -7,9 +7,9 @@ import string
 
 # Function to convert each row in the dataframe
 def convert(row):
-    s = row['pin']
+    s = row['Pin of Interest']
     v = row[s]
-    return f"Force {v} on {s} pin and measure the voltage on the same {s} pin with SPU with range of {row['lower']} and {row['upper']}."
+    return f"Force {v} on {s} pin and measure the voltage on the same {s} pin with SPU with range of {row['Lower Limit']} and {row['Upper Limit']}."
 
 # Function to clean text
 def clean_text(text):
